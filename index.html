@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscador de CEP por Endereço</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Buscar CEP pelo Endereço</h1>
+        
+        <div class="form-group">
+            <label for="uf">Estado (UF):</label>
+            <input type="text" id="uf" maxlength="2" placeholder="ex: PR, SP, RJ" />
+        </div>
+        
+        <div class="form-group">
+            <label for="cidade">Cidade:</label>
+            <input type="text" id="cidade" placeholder="ex: Curitiba, São Paulo" />
+        </div>
+        
+        <div class="form-group">
+            <label for="logradouro">Rua / Avenida / Logradouro:</label>
+            <input type="text" id="logradouro" placeholder="ex: Avenida Presidente Kennedy" />
+        </div>
+        
+        <button id="searchButton">Buscar CEP(s)</button>
+        
+        <div id="result" class="result">
+            <h2>Resultado:</h2>
+            <div id="resultados"></div>
+        </div>
+        
+        <p class="info">* A busca retorna até 50 resultados. Quanto mais completa a informação, melhor o resultado.</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
